@@ -4,7 +4,7 @@ using System;
 
 namespace MyStore.Core.Domain.Entities
 {
-    public class Perfil:Notifiable<Notification>
+    public class Perfil:Notifiable<Notification>, IEntity
     {
         public Guid Id { get; private set; }
         public Descritor Descricao { get; private set; }

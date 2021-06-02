@@ -5,7 +5,7 @@ using System;
 
 namespace MyStore.Core.Domain.Entities
 {
-    public class Cliente:Notifiable<Notification>
+    public class Cliente:Notifiable<Notification>,IEntity
     {
         public Guid Id { get; private set; }
         public CPF CPF { get; private set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyStore.Core.Domain.Entities
 {
-    public class Permissao
+    public class Permissao:IEntity
     {
         public Usuario Usuario { get; private set; }
         public Perfil Perfil { get; private set; }

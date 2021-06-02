@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace MyStore.Core.Domain.Entities
 {
-    public class Usuario: Notifiable<Notification>
+    public class Usuario: Notifiable<Notification>, IEntity
     {
         public CPF CPF { get; private set; }
         public IList<Permissao> Permissoes { get; private set; }
